@@ -55,15 +55,15 @@ scene.add(torus);
 // scene.add(torus3);
 // scene.add(torus4);
 
-const pointLight = new THREE.PointLight(0xad0f0f);
+const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(5,18,5);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
 
-// const lightHelper = new THREE.PointLightHelper(pointLight);
-// const gridHelper = new THREE.GridHelper(2000,50);
+ const lightHelper = new THREE.PointLightHelper(pointLight);
+const gridHelper = new THREE.GridHelper(2000,50);
 
-// scene.add(lightHelper, gridHelper);
+scene.add(lightHelper, gridHelper);
 
 scene.add(pointLight, ambientLight);
 
